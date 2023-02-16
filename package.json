@@ -31,10 +31,8 @@
     },
     "dependencies": {
         "bittorrent-tracker": "^10.0.2",
-        "luxon": "^3.2.1",
-        "portfinder": "^1.0.32",
         "prettier-bytes": "^1.0.4",
-        "uuid": "^9.0.0",
+        "utilitas": "^1991.1.23",
         "webtorrent": "^2.0.13"
     }
 }
