@@ -29,5 +29,11 @@
         "type": "git",
         "url": "https://github.com/rumsystem/rum-torrent.git"
     },
-    "dependencies": {}
+    "dependencies": {
+        "bittorrent-tracker": "^10.0.2",
+        "luxon": "^3.2.1",
+        "portfinder": "^1.0.32",
+        "prettier-bytes": "^1.0.4",
+        "webtorrent": "^2.0.13"
+    }
 }
