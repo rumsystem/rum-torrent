@@ -17,7 +17,7 @@
         "build": "npm run updep && ( git commit -am 'update dependencies' || true )",
         "debug": "node --inspect --trace-warnings debug.mjs",
         "gitsync": "( git commit -am \"Released @ `date`\" || true ) && git pull && git push",
-        "patch": "/bin/sh ./patch.sh",
+        "postprepare": "/bin/sh ./patch.sh",
         "pub": "npm run build && npm run gitsync",
         "start": "node --no-deprecation bin/rum-torrent.mjs",
         "test": "node --inspect --trace-warnings test.mjs",
@@ -32,7 +32,7 @@
     "dependencies": {
         "bittorrent-tracker": "^10.0.2",
         "prettier-bytes": "^1.0.4",
-        "utilitas": "^1991.1.23",
+        "utilitas": "^1991.1.24",
         "webtorrent": "^2.0.13"
     }
 }
