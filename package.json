@@ -8,7 +8,8 @@
     "test": "test.mjs",
     "type": "module",
     "bin": {
-        "rum-torrent": "bin/rum-torrent.mjs"
+        "rum-torrent": "bin/rum-torrent.mjs",
+        "rum-tracker": "bin/rum-tracker.mjs"
     },
     "engines": {
         "node": ">=18.x"
