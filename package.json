@@ -17,7 +17,6 @@
         "build": "npm run updep && ( git commit -am 'update dependencies' || true )",
         "debug": "node --inspect --trace-warnings debug.mjs",
         "gitsync": "( git commit -am \"Released @ `date`\" || true ) && git pull && git push",
-        "postprepare": "/bin/sh ./patch.sh",
         "pub": "npm run build && npm run gitsync",
         "start": "node --no-deprecation bin/rum-torrent.mjs",
         "test": "node --inspect --trace-warnings test.mjs",
@@ -31,7 +30,7 @@
     },
     "dependencies": {
         "bittorrent-peerid": "github:Leask/bittorrent-peerid",
-        "bittorrent-tracker": "^10.0.2",
+        "bittorrent-tracker": "github:Leask/bittorrent-tracker",
         "prettier-bytes": "^1.0.4",
         "utilitas": "^1991.1.25",
         "webtorrent": "^2.0.13"
