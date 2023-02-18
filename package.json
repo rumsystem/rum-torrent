@@ -30,7 +30,6 @@
         "url": "https://github.com/rumsystem/rum-torrent.git"
     },
     "dependencies": {
-        "bittorrent-peerid": "github:Leask/bittorrent-peerid",
         "bittorrent-tracker": "^10.0.2",
         "prettier-bytes": "^1.0.4",
         "utilitas": "^1991.1.25",
