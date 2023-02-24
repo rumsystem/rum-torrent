@@ -33,7 +33,7 @@
         "bittorrent-peerid": "github:Leask/bittorrent-peerid",
         "bittorrent-tracker": "github:Leask/bittorrent-tracker",
         "prettier-bytes": "^1.0.4",
-        "utilitas": "^1991.1.36",
+        "utilitas": "^1991.1.37",
         "webtorrent": "github:Leask/webtorrent"
     }
 }
