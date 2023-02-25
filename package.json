@@ -33,6 +33,7 @@
         "bittorrent-peerid": "github:Leask/bittorrent-peerid",
         "bittorrent-tracker": "github:Leask/bittorrent-tracker",
         "luxon": "^3.2.1",
+        "portfinder": "^1.0.32",
         "prettier-bytes": "^1.0.4",
         "utilitas": "^1992.1.4",
         "webtorrent": "github:Leask/webtorrent"
