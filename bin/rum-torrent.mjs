@@ -22,4 +22,5 @@ try {
 } catch (e) { log(e); process.exit(1); }
 
 await torrent.init({ callback: dashboard.render });
+// await torrent.init({ callback: console.log });
 await torrent.seed(args.seed);

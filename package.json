@@ -36,7 +36,7 @@
         "nat-upnp": "github:Leask/node-nat-upnp",
         "portfinder": "^1.0.32",
         "prettier-bytes": "^1.0.4",
-        "utilitas": "^1992.1.13",
+        "utilitas": "^1992.2.2",
         "webtorrent": "github:Leask/webtorrent"
     }
 }
