@@ -5,6 +5,10 @@
     "private": false,
     "homepage": "https://github.com/rumsystem/rum-torrent",
     "main": "index.mjs",
+    "exports": {
+        "import": "./index.mjs",
+        "require": "./dist/index.cjs"
+    },
     "test": "test.mjs",
     "type": "module",
     "bin": {
@@ -38,5 +42,11 @@
         "prettier-bytes": "^1.0.4",
         "utilitas": "^1992.2.2",
         "webtorrent": "github:Leask/webtorrent"
+    },
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^24.0.1",
+        "@rollup/plugin-json": "^6.0.0",
+        "@rollup/plugin-node-resolve": "^15.0.1",
+        "rollup": "^3.18.0"
     }
 }
