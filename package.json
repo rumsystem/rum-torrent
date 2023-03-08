@@ -25,7 +25,7 @@
         "pub": "npm run build && npm run gitsync",
         "start": "node --no-deprecation bin/rum-torrent.mjs",
         "test": "node --inspect --trace-warnings test.mjs",
-        "updep": "npx ncu -u && npm install"
+        "updep": "npx npm-check-updates -u && npm install"
     },
     "author": "Leask Wong <i@leaskh.com>",
     "license": "MIT",
