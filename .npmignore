@@ -1,0 +1,7 @@
+.history
+/.github
+/build.mjs
+/debug.mjs
+/package-lock.json
+/rollup.config.mjs
+/test.mjs
