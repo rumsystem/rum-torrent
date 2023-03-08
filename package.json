@@ -19,7 +19,7 @@
         "node": ">=18.x"
     },
     "scripts": {
-        "build": "npm run updep && ( git commit -am 'update dependencies' || true )",
+        "build": "npm run updep && ( git commit -am 'update dependencies' || true ) && ./node_modules/.bin/rollup -c",
         "debug": "node --inspect --trace-warnings debug.mjs",
         "gitsync": "( git commit -am \"Released @ `date`\" || true ) && git pull && git push",
         "pub": "npm run build && npm run gitsync",
@@ -36,11 +36,11 @@
     "dependencies": {
         "bittorrent-peerid": "github:Leask/bittorrent-peerid",
         "bittorrent-tracker": "github:Leask/bittorrent-tracker",
-        "luxon": "^3.2.1",
+        "luxon": "^3.3.0",
         "nat-upnp": "github:Leask/node-nat-upnp",
         "portfinder": "^1.0.32",
         "prettier-bytes": "^1.0.4",
-        "utilitas": "^1992.2.2",
+        "utilitas": "^1992.3.30",
         "webtorrent": "github:Leask/webtorrent"
     },
     "devDependencies": {
