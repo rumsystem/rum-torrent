@@ -44,7 +44,7 @@ export default {
                 // node_modules/uint8-util/browser.js:51
                 output = output.replace(
                     "const scope = typeof window !== 'undefined' ? window : self;",
-                    "const scope = typeof window !== 'undefined' ? window : global;",
+                    "const scope = typeof window !== 'undefined' ? window : globalThis;",
                 );
                 await writeFile(filePath, output);
             },
