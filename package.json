@@ -1,7 +1,7 @@
 {
     "name": "rum-torrent",
     "description": "RUM Private Torrent",
-    "version": "0.1.13",
+    "version": "0.1.14",
     "private": false,
     "homepage": "https://github.com/rumsystem/rum-torrent",
     "main": "index.mjs",
@@ -40,7 +40,7 @@
         "nat-upnp": "github:Leask/node-nat-upnp",
         "portfinder": "^1.0.32",
         "prettier-bytes": "^1.0.4",
-        "utilitas": "^1992.3.30",
+        "utilitas": "^1992.3.31",
         "webtorrent": "github:Leask/webtorrent"
     },
     "devDependencies": {
