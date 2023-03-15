@@ -40,13 +40,13 @@
         "nat-upnp": "github:Leask/node-nat-upnp",
         "portfinder": "^1.0.32",
         "prettier-bytes": "^1.0.4",
-        "utilitas": "^1992.3.31",
+        "utilitas": "^1992.3.43",
         "webtorrent": "github:Leask/webtorrent"
     },
     "devDependencies": {
         "@rollup/plugin-commonjs": "^24.0.1",
         "@rollup/plugin-json": "^6.0.0",
         "@rollup/plugin-node-resolve": "^15.0.1",
-        "rollup": "^3.19.0"
+        "rollup": "^3.19.1"
     }
 }
