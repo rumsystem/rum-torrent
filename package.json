@@ -40,7 +40,7 @@
         "nat-upnp": "github:Leask/node-nat-upnp",
         "portfinder": "^1.0.32",
         "prettier-bytes": "^1.0.4",
-        "utilitas": "^1992.4.4",
+        "utilitas": "^1992.4.5",
         "webtorrent": "github:Leask/webtorrent"
     },
     "devDependencies": {
