@@ -1,7 +1,7 @@
 {
     "name": "rum-torrent",
     "description": "RUM Private Torrent",
-    "version": "0.1.20",
+    "version": "0.1.21",
     "private": false,
     "homepage": "https://github.com/rumsystem/rum-torrent",
     "main": "index.mjs",
