@@ -40,7 +40,7 @@
         "nat-upnp": "github:Leask/node-nat-upnp",
         "portfinder": "^1.0.32",
         "prettier-bytes": "^1.0.4",
-        "utilitas": "^1992.4.6",
+        "utilitas": "^1992.4.7",
         "webtorrent": "github:Leask/webtorrent"
     },
     "devDependencies": {
@@ -48,6 +48,6 @@
         "@rollup/plugin-json": "^6.0.0",
         "@rollup/plugin-node-resolve": "^15.0.1",
         "mysql2": "^3.2.0",
-        "rollup": "^3.19.1"
+        "rollup": "^3.20.0"
     }
 }
