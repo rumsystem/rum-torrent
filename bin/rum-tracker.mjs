@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 import { tracker } from '../index.mjs';
-import { utilitas } from 'utilitas';
 
 const args = await (async (options) => {
     const { parseArgs } = await import('node:util');
