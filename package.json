@@ -40,15 +40,15 @@
         "nat-upnp": "github:Leask/node-nat-upnp",
         "portfinder": "^1.0.32",
         "prettier-bytes": "^1.0.4",
-        "utilitas": "^1992.4.43",
+        "utilitas": "^1994.0.13",
         "webtorrent": "github:Leask/webtorrent"
     },
     "devDependencies": {
-        "@rollup/plugin-commonjs": "^24.0.1",
+        "@rollup/plugin-commonjs": "^24.1.0",
         "@rollup/plugin-json": "^6.0.0",
-        "@rollup/plugin-node-resolve": "^15.0.1",
+        "@rollup/plugin-node-resolve": "^15.0.2",
         "acme-client": "^5.0.0",
-        "mysql2": "^3.2.0",
-        "rollup": "^3.20.2"
+        "mysql2": "^3.2.3",
+        "rollup": "^3.20.4"
     }
 }
