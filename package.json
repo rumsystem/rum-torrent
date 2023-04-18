@@ -34,14 +34,14 @@
         "url": "https://github.com/rumsystem/rum-torrent.git"
     },
     "dependencies": {
-        "bittorrent-peerid": "github:Leask/bittorrent-peerid",
-        "bittorrent-tracker": "github:Leask/bittorrent-tracker#rum",
+        "bittorrent-peerid": "github:Leask/bittorrent-peerid#e85bd60",
+        "bittorrent-tracker": "github:Leask/bittorrent-tracker#d31e8b6",
         "luxon": "^3.3.0",
         "nat-upnp": "github:Leask/node-nat-upnp",
         "portfinder": "^1.0.32",
         "prettier-bytes": "^1.0.4",
         "utilitas": "^1994.0.13",
-        "webtorrent": "github:Leask/webtorrent"
+        "webtorrent": "github:Leask/webtorrent#6a34b9b"
     },
     "devDependencies": {
         "@rollup/plugin-commonjs": "^24.1.0",
