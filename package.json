@@ -34,7 +34,7 @@
         "url": "https://github.com/rumsystem/rum-torrent.git"
     },
     "dependencies": {
-        "bittorrent-peerid": "github:Leask/bittorrent-peerid#e85bd60",
+        "bittorrent-peerid": "github:webtorrent/bittorrent-peerid#8659aee",
         "bittorrent-tracker": "github:Leask/bittorrent-tracker#d31e8b6",
         "luxon": "^3.3.0",
         "nat-upnp": "github:Leask/node-nat-upnp",
