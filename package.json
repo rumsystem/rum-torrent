@@ -35,15 +35,13 @@
     },
     "dependencies": {
         "bittorrent-peerid": "github:webtorrent/bittorrent-peerid#51a3f0d52a138ab67c1df34694ad4aa4d1ba0d92",
-        "bittorrent-tracker": "github:Leask/bittorrent-tracker#09deb02c5c4a485cd748a3f67c722c92b0358211",
+        "bittorrent-tracker": "github:Leask/bittorrent-tracker#3fc2a02244c2959c64c2247e6a5916dbf8c2de93",
         "elliptic": "^6.5.4",
-        "ethereumjs-util": "^7.1.5",
         "luxon": "^3.3.0",
         "nat-upnp": "github:Leask/node-nat-upnp",
         "portfinder": "^1.0.32",
         "prettier-bytes": "^1.0.4",
-        "secp256k1": "^5.0.0",
-        "utilitas": "^1995.0.5",
+        "utilitas": "^1995.0.7",
         "webtorrent": "github:Leask/webtorrent#ee02ab29b93920b724a4bd99a821f2d4f53265e7"
     },
     "devDependencies": {
@@ -51,7 +49,8 @@
         "@rollup/plugin-json": "^6.0.0",
         "@rollup/plugin-node-resolve": "^15.1.0",
         "acme-client": "^5.0.0",
-        "mysql2": "^3.5.0",
+        "bistrot": "^7.6.7",
+        "mysql2": "^3.5.1",
         "rollup": "^3.26.2"
     }
 }
