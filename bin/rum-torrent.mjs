@@ -9,7 +9,11 @@ const args = await (async (options) => {
     const { parseArgs } = await import('node:util');
     if (parseArgs) { // https://kgrz.io/node-has-native-arg-parsing.html
         const { values } = parseArgs({
-            options: { seed: { type: 'string', short: 's', default: '' } },
+            options: {
+                seed: { type: 'string', short: 's', default: '' },
+                nft: { type: 'string', short: 'n', default: '' },
+                key: { type: 'string', short: 'k', default: '' },
+            },
             ...options || {},
         });
         return values;
@@ -27,4 +31,4 @@ try {
 } catch (e) { log(e); process.exit(1); }
 
 await torrent.init({ callback: dashboard.render });
-await torrent.seed(args.seed);
+await torrent.seed(args.seed, { nftadd: args.nft, privateKey: args.key });
