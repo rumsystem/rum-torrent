@@ -9,6 +9,7 @@ const args = await (async (options) => {
             options: {
                 domain: { type: 'string', short: 'd', default: '' },
                 ssl: { type: 'boolean', short: 's', default: false },
+                auth: { type: 'boolean', short: 'a', default: false },
             },
             ...options || {},
         });
@@ -22,4 +23,4 @@ const args = await (async (options) => {
     return args;
 })();
 
-await tracker.init({ ssl: args.ssl, domain: args.domain });
+await tracker.init({ ssl: args.ssl, domain: args.domain, auth: args.auth });
