@@ -12,6 +12,7 @@ const args = await (async (options) => {
             options: {
                 file: { type: 'string', short: 'f', default: '' },
                 key: { type: 'string', short: 'k', default: '' },
+                eth: { type: 'string', short: 'e', default: '' },
             },
             ...options || {},
         });
@@ -29,6 +30,7 @@ try {
     assert(args.file, 'Please provide a file or torrent-info(.torrent or magnet link) to publish.', 400);
 } catch (e) { log(e); process.exit(1); }
 
+args.eth && (globalThis.chainConfig = { rpcApi: args.eth });
 const result = await torrent.publish(args.file, args.key);
 console.log(result);
 process.exit(0);
