@@ -95,7 +95,20 @@ $ rum-publish --file='/a/b/c.torrent' --key='1234567890' --eth='https://prs-bp64
 $ rum-publish --file='/a/b/d/d/e.mp4' --key='1234567890' --eth='https://prs-bp64.press.one/ethrpc' --tr='https://prs-bp89.press.one/announce'
 ```
 
-If success, you will get the meta data of the file, a `magnet link`, and a `Erc721` contract address as the result. You can share the `magnet link` to your friends. Send your friend a `Erc721` token so they can download the file.
+If success, you will get the meta data of the file, a `magnet link` (magnet), and a `Erc721` contract address (nftadd) as the result. You can share the `magnet link` to your friends. Send your friend a `Erc721` token so they can download the file.
+
+Result example:
+
+```javascript
+{
+  chainApi: [ 'https://prs-bp64.press.one/ethrpc' ],
+  btih: '79913029e558d7f1321089d06affc1808d505e72',
+  nftadd: '0x5DbC625DDED0b815096b6a662997C469638c2cE4',
+  symbol: 'RUMPT-79913029e558d7f1321089d06affc1808d505e72',
+  baseTokenURI: 'magnet:?xt=urn:btih:79913029e558d7f1321089d06affc1808d505e72&ti=',
+  magnet: 'magnet:?xt=urn:btih:79913029e558d7f1321089d06affc1808d505e72&na=0x5DbC625DDED0b815096b6a662997C469638c2cE4&tr=tr=https%3A%2F%2Fprs-bp2.press.one%2Fannounce%2F%7B%7BRUM_PT_TOKEN%7D%7D'
+}
+```
 
 #### Download files
 
