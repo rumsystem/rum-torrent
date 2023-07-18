@@ -10,6 +10,7 @@ const args = await (async (options) => {
                 domain: { type: 'string', short: 'd', default: '' },
                 ssl: { type: 'boolean', short: 's', default: false },
                 auth: { type: 'boolean', short: 'a', default: false },
+                eth: { type: 'string', short: 'e', default: '' },
             },
             ...options || {},
         });
@@ -23,4 +24,5 @@ const args = await (async (options) => {
     return args;
 })();
 
+args.eth && (globalThis.chainConfig = { rpcApi: args.eth });
 await tracker.init({ ssl: args.ssl, domain: args.domain, auth: args.auth });
