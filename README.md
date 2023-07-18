@@ -53,6 +53,58 @@ You DO NOT need to run this. Do this only if you want to run your own tracker.
 $ rum-tracker
 ```
 
+### Using `Erc721(ETH)` as `PT` verification
+
+Integrate Private Torrent with Ethereum. You can use `Erc721` as `PT` verification. This project in `proof of concept` stage. You can use it as a reference to build your own `PT` system.
+
+#### Run you own `PT tracker`
+
+You need [bistrot](https://github.com/Press-One/bistrot) to support this feature.
+
+```bash
+$ npm install -g bistrot
+```
+
+Run your own `PT tracker` first.
+
+- Use `--auth` to enable `Erc721` verification.
+- Use `--eth` to specify the RPC endpoint of your `Ethereum` node.
+
+```bash
+$ rum-tracker --auth --eth=https://prs-bp64.press.one/ethrpc
+```
+
+#### Publish files
+
+You need [bistrot](https://github.com/Press-One/bistrot) to support this feature. In the future version, the `bitrot` will not be needed.
+
+```bash
+$ npm install -g bistrot
+```
+
+It's time to publish files.
+
+- You can publish files via `magnet links`, `torrent files` or `media files`.
+- Use `--key` to specify your ethereum private key.
+- Use `--eth` to specify the RPC endpoint of your `Ethereum` node.
+- use `--tr` to specify your `PT tracker`.
+
+```bash
+$ rum-publish --file='magnet:xxxxxxx' --key='1234567890' --eth='https://prs-bp64.press.one/ethrpc' --tr='https://prs-bp89.press.one/announce'
+$ rum-publish --file='/a/b/c.torrent' --key='1234567890' --eth='https://prs-bp64.press.one/ethrpc' --tr='https://prs-bp89.press.one/announce'
+$ rum-publish --file='/a/b/d/d/e.mp4' --key='1234567890' --eth='https://prs-bp64.press.one/ethrpc' --tr='https://prs-bp89.press.one/announce'
+```
+
+If success, you will get the meta data of the file, a `magnet link`, and a `Erc721` contract address as the result. You can share the `magnet link` to your friends. Send your friend a `Erc721` token so they can download the file.
+
+#### Download files
+
+You can download files via `magnet links` or `torrent files` as usual. But you need to specify your `Ethereum` private key to sign the meta data in order to pass the `PT` verification.
+
+```bash
+$ rum-torrent --seed='magnet:?xt=urn:btih:79913029e558d7f1321089d06affc1808d505e72&dn=lego.jurassic.world.the.legend.of.isla.nublar.s01e02.stampede.internal.720p.hdtv.x264-w4f.mkv&tr=http%3A%2F%2F127.0.0.1:8965%2Fannounce%2F{{RUM_PT_TOKEN}}&na=0xBf697e640e21CFe211a46201E0f4e6551667b028' --key=30b3185138df421ea913486c03d0c08a6b62a6adac2f96d1c0a989a05fe427c1
+```
+
 ## Integrate into your app
 
 ### Install

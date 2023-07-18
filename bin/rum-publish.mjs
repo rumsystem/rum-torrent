@@ -13,6 +13,7 @@ const args = await (async (options) => {
                 file: { type: 'string', short: 'f', default: '' },
                 key: { type: 'string', short: 'k', default: '' },
                 eth: { type: 'string', short: 'e', default: '' },
+                tr: { type: 'string', short: 't', default: '' },
             },
             ...options || {},
         });
@@ -31,6 +32,6 @@ try {
 } catch (e) { log(e); process.exit(1); }
 
 args.eth && (globalThis.chainConfig = { rpcApi: args.eth });
-const result = await torrent.publish(args.file, args.key);
+const result = await torrent.publish(args.file, args.key, { announce: args.tr });
 console.log(result);
 process.exit(0);
