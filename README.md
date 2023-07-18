@@ -134,3 +134,7 @@ import { tracker } from 'rum-torrent';
 // init
 await tracker.init();
 ```
+
+### Coding with the `Erc721(ETH) PT Tracker`
+
+- [Publish Files](https://github.com/rumsystem/rum-torrent/blob/main/lib/torrent.mjs#L228)
